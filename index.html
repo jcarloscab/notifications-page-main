@@ -29,8 +29,10 @@
   <body>
     <div class="notifications">
       <header class="notifications__header">
-        <h1 class="notifications__title">Notifications</h1>
-        <div id="counter" class="notifications__counter">3</div>
+        <div class="notifications__title-container">
+          <h1 class="notifications__title">Notifications</h1>
+          <div id="counter" class="notifications__counter">7</div>
+        </div>
         <button id="btn-readed" class="btn">Mark all as read</button>
       </header>
       <main class="notifications__main">
@@ -42,10 +44,11 @@
           />
           <div class="notification__content">
             <div class="notification__header">
-              <div notification__title notification__title--unreaded>
+              <div class="notification__title notification__title--unreaded">
                 <span class="notification__name">Mark Webber</span>reacted to
                 your recent post My first
                 <span class="notification__reference">tournament today!</span>
+                <i class="notification__unreaded"></i>
               </div>
               <div class="notification__date">1m ago</div>
             </div>
@@ -59,8 +62,9 @@
           />
           <div class="notification__content">
             <div class="notification__header">
-              <div notification__title notification__title--unreaded>
-                <span class="notification__name">Angela Gray</span>followed you
+              <div class="notification__title notification__title--unreaded">
+                <span class="notification__name">Angela Gray</span>followed
+                you<i class="notification__unreaded"></i>
               </div>
               <div class="notification__date">5m ago</div>
             </div>
@@ -74,10 +78,11 @@
           />
           <div class="notification__content">
             <div class="notification__header">
-              <div notification__title notification__title--unreaded>
+              <div class="notification__title notification__title--unreaded">
                 <span class="notification__name">Jacob Thompson</span>has joined
                 your group
                 <span class="notification__reference">Chess Club</span>
+                <i class="notification__unreaded"></i>
               </div>
               <div class="notification__date">1 day ago</div>
             </div>
@@ -91,16 +96,26 @@
           />
           <details class="notification__content">
             <summary class="notification__header">
-              <div notification__title notification__title--unreaded>
+              <div class="notification__title notification__title--unreaded">
                 <span class="notification__name">Rizky Hasanuddin</span>sent you
                 a private message
                 <span class="notification__reference">Chess Club</span>
+                <i class="notification__unreaded"></i>
+                <img
+                  src="./assets/images/chevron-down-solid.svg"
+                  style="width: 16px; height: 16px"
+                  class="notification-arrow"
+                  aria-hidden="true"
+                  alt=""
+                />
               </div>
               <div class="notification__date">5 days ago</div>
             </summary>
-            Hello, thanks for setting up the Chess Club. I've been a member for
-            a few weeks now and I'm already having lots of fun and improving my
-            game.
+            <div class="notification__comment">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </div>
           </details>
         </article>
         <article class="notification">
@@ -111,17 +126,18 @@
           />
           <div class="notification__content">
             <div class="notification__header">
-              <div notification__title notification__title--unreaded>
+              <div class="notification__title notification__title--unreaded">
                 <span class="notification__name">Kimberly Smith</span>commented
-                on your picture
+                on your picture<i class="notification__unreaded"></i>
               </div>
               <div class="notification__date">1 week ago</div>
             </div>
-            <img
-              src="./assets/images/image-chess.webp"
-              alt="chica jugando al ajedrez"
-            />
           </div>
+          <img
+            class="notification__picture-commented"
+            src="./assets/images/image-chess.webp"
+            alt="chica jugando al ajedrez"
+          />
         </article>
         <article class="notification">
           <img
@@ -131,12 +147,12 @@
           />
           <div class="notification__content">
             <div class="notification__header">
-              <div notification__title notification__title--unreaded>
+              <div class="notification__title notification__title--unreaded">
                 <span class="notification__name">Nathan Peterson</span>reacted
                 to your recent post
                 <span class="notification__reference"
                   >5 end-game strategies to increase your win rate</span
-                >
+                ><i class="notification__unreaded"></i>
               </div>
               <div class="notification__date">2 weeks ago</div>
             </div>
@@ -150,9 +166,10 @@
           />
           <div class="notification__content">
             <div class="notification__header">
-              <div notification__title notification__title--unreaded>
+              <div class="notification__title notification__title--unreaded">
                 <span class="notification__name">Anna Kim</span>left the group
                 <span class="notification__reference">Chess Club</span>
+                <i class="notification__unreaded"></i>
               </div>
               <div class="notification__date">2 weeks ago</div>
             </div>

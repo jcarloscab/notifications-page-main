@@ -1,1 +1,146 @@
-@import url(./modules/_generals.scss);/*# sourceMappingURL=styles.css.map */
+@font-face {
+  font-family: plusjakartasans;
+  src: url(../fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: plusjakartasans;
+  src: url(../fonts/static/PlusJakartaSans-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: plusjakartasans;
+  src: url(../fonts/static/PlusJakartaSans-ExtraBold.ttf);
+  font-weight: 800;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: plusjakartasans;
+  font-size: 52.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: hsl(210, 60%, 98%);
+  color: hsl(219, 12%, 42%);
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  color: hsl(219, 14%, 63%);
+}
+.btn:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+
+.notifications {
+  width: 55%;
+  margin: 45px auto;
+  padding: 40px 30px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+}
+.notifications__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+.notifications__title-container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.notifications__title {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+.notifications__counter {
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(0, 0%, 100%);
+  padding: 1px 8px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.notification {
+  background-color: hsl(210, 60%, 98%);
+  display: flex;
+  padding: 12px 20px;
+  gap: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.notification__avatar {
+  width: 45px;
+  height: 45px;
+}
+.notification__content {
+  flex-grow: 1;
+}
+.notification__header {
+  list-style: none;
+}
+.notification__unreaded {
+  display: none;
+}
+.notification__title {
+  margin-bottom: 5px;
+}
+.notification__title--unreaded .notification__unreaded {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: hsl(1, 90%, 64%);
+}
+.notification__name {
+  color: hsl(224, 21%, 14%);
+  font-weight: 800;
+  margin-right: 5px;
+}
+.notification__name:hover {
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+}
+.notification__reference {
+  color: hsl(219, 14%, 63%);
+  font-weight: 800;
+}
+.notification__reference:hover {
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+}
+.notification-arrow {
+  position: relative;
+  top: 3px;
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+.notification__content[open] .notification-arrow {
+  transform: rotate(-180deg);
+}
+.notification__comment {
+  padding: 15px;
+  border: 1px solid hsl(205, 33%, 90%);
+  border-radius: 5px;
+}
+.notification__date {
+  color: hsl(219, 14%, 63%);
+  font-weight: 800;
+}
+.notification summary {
+  margin-bottom: 10px;
+}
+.notification__picture-commented {
+  width: 48px;
+  height: 48px;
+}/*# sourceMappingURL=styles.css.map */
