@@ -46,6 +46,19 @@ body {
   background-color: hsl(0, 0%, 100%);
   border-radius: 15px;
 }
+@media screen and (max-width: 768px) {
+  .notifications {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .notifications {
+    width: 100%;
+    margin: 0;
+    padding: 20px 10px;
+    border-radius: 0;
+  }
+}
 .notifications__header {
   width: 100%;
   display: flex;
@@ -77,6 +90,11 @@ body {
   gap: 20px;
   border-radius: 5px;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 375px) {
+  .notification {
+    gap: 10px;
+  }
 }
 .notification__avatar {
   width: 45px;
@@ -143,4 +161,5 @@ body {
 .notification__picture-commented {
   width: 48px;
   height: 48px;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

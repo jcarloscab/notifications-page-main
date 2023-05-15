@@ -18,6 +18,17 @@
   background-color: $white;
   border-radius: 15px;
 
+  @include mixin-queries.tablet {
+    width: 80%;
+  }
+
+  @include mixin-queries.mobile {
+    width: 100%;
+    margin: 0;
+    padding: 20px 10px;
+    border-radius: 0;
+  }
+
   &__header {
     width: 100%;
     display: flex;
@@ -54,6 +65,10 @@
   gap: 20px;
   border-radius: 5px;
   margin-bottom: 10px;
+
+  @include mixin-queries.mobile {
+    gap: 10px;
+  }
 
   &__avatar {
     width: 45px;
@@ -139,5 +154,6 @@
   &__picture-commented {
     width: 48px;
     height: 48px;
+    cursor: pointer;
   }
 }
