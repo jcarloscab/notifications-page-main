@@ -70,6 +70,17 @@
     gap: 10px;
   }
 
+  &--unreaded {
+    .icon-unreaded {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-left: 5px;
+      border-radius: 50%;
+      background-color: $red;
+    }
+  }
+
   &__avatar {
     width: 45px;
     height: 45px;
@@ -83,23 +94,8 @@
     list-style: none;
   }
 
-  &__unreaded {
-    display: none;
-  }
-
   &__title {
     margin-bottom: 5px;
-
-    &--unreaded {
-      .notification__unreaded {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        margin-left: 5px;
-        border-radius: 50%;
-        background-color: $red;
-      }
-    }
   }
 
   &__name {

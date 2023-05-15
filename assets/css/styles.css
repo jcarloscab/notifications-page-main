@@ -96,6 +96,14 @@ body {
     gap: 10px;
   }
 }
+.notification--unreaded .icon-unreaded {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: hsl(1, 90%, 64%);
+}
 .notification__avatar {
   width: 45px;
   height: 45px;
@@ -106,19 +114,8 @@ body {
 .notification__header {
   list-style: none;
 }
-.notification__unreaded {
-  display: none;
-}
 .notification__title {
   margin-bottom: 5px;
-}
-.notification__title--unreaded .notification__unreaded {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-left: 5px;
-  border-radius: 50%;
-  background-color: hsl(1, 90%, 64%);
 }
 .notification__name {
   color: hsl(224, 21%, 14%);
