@@ -48,7 +48,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .notifications {
-    width: 80%;
+    width: 85%;
   }
 }
 @media screen and (max-width: 375px) {
@@ -96,7 +96,7 @@ body {
     gap: 10px;
   }
 }
-.notification--unreaded .icon-unreaded {
+.notification--unread .icon-unread {
   display: inline-block;
   width: 10px;
   height: 10px;

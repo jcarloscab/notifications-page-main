@@ -19,7 +19,7 @@
   border-radius: 15px;
 
   @include mixin-queries.tablet {
-    width: 80%;
+    width: 85%;
   }
 
   @include mixin-queries.mobile {
@@ -70,8 +70,8 @@
     gap: 10px;
   }
 
-  &--unreaded {
-    .icon-unreaded {
+  &--unread {
+    .icon-unread {
       display: inline-block;
       width: 10px;
       height: 10px;
